@@ -223,59 +223,64 @@
 
     @media (max-width: 768px) {
       body {
-        transform: scale(1); /* Reset scaling to match PC layout */
-        transform-origin: top left;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #1e1e2f;
+        color: #fff;
       }
 
       header {
-        height: 20vh;
-        width: 20vh;
+        height: auto;
         padding: 10px;
-        background-color: transparent;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       nav {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
       }
 
       nav a {
-        font-size: 1rem; /* Match PC font size */
-        padding: 10px;
+        font-size: 0.9rem;
+        padding: 8px;
         color: #fff;
         text-decoration: none;
-        border-bottom: none;
+        border-bottom: 1px solid #fff;
+        width: 100%;
         text-align: center;
       }
 
       .hero {
-        height: 100vh;
-        padding: 50px;
+        height: auto;
+        padding: 20px;
         text-align: center;
         background-color: #1e1e2f;
       }
 
       .hero h1 {
-        font-size: 1.5rem; /* Match PC font size */
-        margin-bottom: 20px;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
         word-wrap: break-word;
       }
 
       .about img {
-        width: 450px; /* Match PC image size */
-        height: 450px;
+        width: 100%;
+        height: auto;
       }
 
       .project-skills h2, .project-skills h1 {
         text-align: center;
-        font-size: 2rem; /* Match PC font size */
+        font-size: 1.5rem;
       }
 
       .contact h1 {
-        font-size: 2rem; /* Match PC font size */
+        font-size: 1.5rem;
       }
 
       .contact form input, .contact form textarea {
@@ -283,12 +288,13 @@
       }
 
       .footer {
-        padding: 20px;
+        padding: 10px;
+        text-align: center;
       }
 
       .btn {
-        font-size: 1.2rem; /* Match PC button size */
-        padding: 15px;
+        font-size: 0.9rem;
+        padding: 8px;
       }
     }
 
