@@ -441,7 +441,7 @@
           <input type="text" class="form-control mb-3" placeholder="YOUR NAME">
           <input type="email" class="form-control mb-3" placeholder="YOUR EMAIL ADDRESS">
           <textarea class="form-control mb-3" rows="5" placeholder="WHAT CAN I HELP FOR YOU?"></textarea>
-          <button type="submit" class="btn btn-dark text-white w-100">SEND</button>
+          <button type="submit" class="btn btn-dark text-white w-100" onclick="showAlert()">SEND</button>
         </form>
       </div>
     </div>
@@ -477,6 +477,18 @@
 <!-- Box Icon -->
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+<!-- SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  function showAlert() {
+    Swal.fire({
+      title: 'Form Submitted!',
+      text: 'Your message has been sent successfully.',
+      icon: 'success',
+      confirmButtonText: 'OK'
+    });
+  }
+</script>
 
 </body>
 </html>
