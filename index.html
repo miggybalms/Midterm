@@ -437,11 +437,11 @@
       </div>
 
       <div class="col-md-6" data-aos="fade-left" data-aos-delay="500">
-        <form>
+        <form onsubmit="event.preventDefault(); showAlert();">
           <input type="text" class="form-control mb-3" placeholder="YOUR NAME">
-          <input type="email" class="form-control mb-3" placeholder="YOUR EMAIL ADDRESS">
+          <input type="email" class="form-control mb-3" placeholder="YOUR EMAIL">
           <textarea class="form-control mb-3" rows="5" placeholder="WHAT CAN I HELP FOR YOU?"></textarea>
-          <button type="button" class="btn btn-dark text-white w-100" onclick="showAlert()">SEND</button>
+          <button type="submit" class="btn btn-dark text-white w-100">SEND</button>
         </form>
       </div>
     </div>
