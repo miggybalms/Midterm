@@ -216,65 +216,59 @@
     }
 
     @media (max-width: 768px) {
+      body {
+        transform: scale(1); /* Reset scaling to match PC layout */
+        transform-origin: top left;
+      }
+
       header {
-        height: auto;
-        width: auto;
+        height: 10vh;
         padding: 10px;
-        background-color: #000;
+        background-color: transparent;
       }
 
       nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
       }
 
       nav a {
-        font-size: 0.8rem; /* Reduced font size for smaller text in the header */
+        font-size: 1rem; /* Match PC font size */
         padding: 10px;
         color: #fff;
         text-decoration: none;
-        border-bottom: 1px solid #fff;
-        width: 100%;
+        border-bottom: none;
         text-align: center;
       }
 
       .hero {
-        height: auto;
-        width: auto;
-        padding: 20px;
+        height: 100vh;
+        padding: 50px;
         text-align: center;
         background-color: #1e1e2f;
       }
 
       .hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
+        font-size: 4rem; /* Match PC font size */
+        margin-bottom: 20px;
         word-wrap: break-word;
       }
 
-      .hero .shape-1,
-      .hero .shape-2 {
-        display: none;
-      }
-
-      .hero .line {
-        display: none;
-      }
-
       .about img {
-        width: 100%;
-        height: auto;
+        width: 450px; /* Match PC image size */
+        height: 450px;
       }
 
       .project-skills h2, .project-skills h1 {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem; /* Match PC font size */
       }
 
       .contact h1 {
-        font-size: 1.5rem;
+        font-size: 2rem; /* Match PC font size */
       }
 
       .contact form input, .contact form textarea {
@@ -282,30 +276,12 @@
       }
 
       .footer {
-        padding: 10px;
+        padding: 20px;
       }
 
       .btn {
-        font-size: 1rem;
-        padding: 10px;
-      }
-
-      body {
-        transform: scale(0.9); /* Shrinks the entire web content slightly for mobile */
-        transform-origin: top left;
-      }
-
-      .container {
-        padding: 10px; /* Reduces padding for better fit */
-      }
-
-      .hero h1 {
-        font-size: 2rem; /* Further reduce font size for hero section */
-      }
-
-      .btn {
-        font-size: 0.9rem; /* Shrink button text size */
-        padding: 8px; /* Adjust button padding */
+        font-size: 1.2rem; /* Match PC button size */
+        padding: 15px;
       }
     }
 
